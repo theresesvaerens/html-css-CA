@@ -53,16 +53,17 @@ body {
 
 .icon_container {
   display: flex;
-  align-items: center;
+  align-items: end;
 }
 
 .navbar_menu_icon {
   color: white;
   font-size: 18px;
-  margin-left: 15px;
+  margin-left: 20px;
+  align-items: right;
 }
 
-
+/*Home page*/
 .container {
   padding: 20px;
 }
@@ -144,3 +145,59 @@ body {
 }
 
 
+
+/*List of videos*/
+.categories_menu{
+  color: white;
+}
+
+
+/*contact page*/
+.contact_container {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact_left {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.contact_left_title h1 {
+  margin-bottom: 10px;
+}
+
+.contact_inputs {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: small;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  padding: 5px;
+  font-size: small;
+  color: white;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.contact_right{
+  font-size: small;
+  padding-left: 20px;
+  }
+
+.contact_right img {
+  max-width: 100%;
+  height: auto;
+}
