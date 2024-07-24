@@ -10,33 +10,91 @@
   <nav class="navbar">
     <div class="navbar_container">
       <div class="logo_container">
-        <h1 class="logo">
         <img src="Images/SquareEyes_Logo.png" alt="SquareEyes Logo" class="logo" width="200" height="60">
-        </h1>  
       </div>
       <div class="menu_container">
-      <ul class="menu_list">
-        <li class="menu_list_item"><a href="index.html" class="navbar__links">Home</a></li>
-        <li class="menu_list_item"><a href="ListOfVideos.html" class="navbar__links">Movies</a></li>
-        <li class="menu_list_item"><a href="MyCollection.html" class="navbar__links">My Collection</a></li>
-      </ul>
+        <ul class="menu_list">
+          <li class="menu_list_item"><a href="index.html" class="navbar__links">Home</a></li>
+          <li class="menu_list_item"><a href="ListOfVideos.html" class="navbar__links">Movies</a></li>
+          <li class="menu_list_item"><a href="MyCollection.html" class="navbar__links">My Collection</a></li>
+        </ul>
       </div>
       <div class="icon_container">
         <i class="navbar_menu_icon fa-solid fa-magnifying-glass"></i>
         <i class="navbar_menu_icon fa-solid fa-cart-shopping"></i>
       </div>
     </div>
+  </nav>
 
-    <ul class="categories_menu">
-      <li class="categories_menu_item"><a href="all.html" class="categories_link">All movies</a></li>
-      <li class="categories_menu_item"><a href="action.html" class="categories_link">Action</a></li>
-      <li class="categories_menu_item"><a href="documentary.html" class="categories_link">Documentary</a></li>
-      <li class="categories_menu_item"><a href="drama.html" class="categories_link">Drama</a></li>
-      <li class="categories_menu_item"><a href="fantasy.html" class="categories_link">Fantasy</a></li>
-      <li class="categories_menu_item"><a href="horror.html" class="categories_link">Horror</a></li>
-      <li class="categories_menu_item"><a href="musical.html" class="categories_link">Musical</a></li>
-      <li class="categories_menu_item"><a href="romance.html" class="categories_link">Romance</a></li>
-      <li class="categories_menu_item"><a href="sciencefiction.html" class="categories_link">Science fiction</a></li>
-      <li class="categories_menu_item"><a href="thriller.html" class="categories_link">Thriller</a></li>
+  <div class="main_container">
+    <aside class="sidebar">
+      <h2>Categories</h2>
+      <ul>
+        <li><a href="#">All movies</a></li>
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Documentary</a></li>
+        <li><a href="#">Drama</a></li>
+        <li><a href="#">Fantasy</a></li>
+        <li><a href="#">Horror</a></li>
+        <li><a href="#">Musical</a></li>
+        <li><a href="#">Romance</a></li>
+        <li><a href="#">Science fiction</a></li>
+        <li><a href="#">Thriller</a></li>
+      </ul>
+    </aside>
+  
+    <section class="content">
+      <h2>All Movies</h2>
+      <div class="sort_by">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+          <option value="latest">Latest</option>
+          <option value="oldest">Oldest</option>
+        </select>
+      </div>
+      <div class="movies_grid">
+        <div class="movie_item">
+          <img src="Images/Square_Eyes_Cover7.jpeg" alt="The Batman">
+          <p>The Batman</p>
+          <p>169 NOK</p>
+        </div>
+        <div class="movie_item">
+          <img src="Images/Square_Eyes_Cover1.jpeg" alt="Godzilla: King of the Monsters">
+          <p>Godzilla: King of the Monsters</p>
+          <p>169 NOK</p>
+        </div>
+        <div class="movie_item">
+          <img src="Images/Square_Eyes_Cover2.jpeg" alt="Hobbs & Shaw">
+          <p>Hobbs & Shaw</p>
+          <p>169 NOK</p>
+        </div>
+        <div class="movie_item">
+          <img src="Images/Square_Eyes_Cover3.jpeg" alt="Sweetheart">
+          <p>Sweetheart</p>
+          <p>169 NOK</p>
+        </div>
+        <div class="movie_item">
+          <img src="Images/Square_Eyes_Cover4.jpeg" alt="Once Upon a Time in Hollywood">
+          <p>Once Upon a Time in Hollywood</p>
+          <p>169 NOK</p>
+        </div>
+        <div class="movie_item">
+          <img src="Images/Square_Eyes_Cover5.jpeg" alt="The Addams Family">
+          <p>The Addams Family</p>
+          <p>169 NOK</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <ul class="footer_menu">
+      <li><a href="About.html">About</a></li>
+      <li><a href="ContactUs.html">Contact us</a></li>
+      <li><a href="Terms.html">Terms and privacy notice</a></li>
+      <li><a href="index.html"><img src="Images/SquareEyes_Logo.png" alt="SquareEyes Logo" class="logo" width="200" height="60"></a></li>
     </ul>
+    <p>©2024 squareeyes.com, Inc. or its affiliates</p>
+  </footer>
 </body>
+</html>

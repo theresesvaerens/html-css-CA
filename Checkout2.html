@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Square Eyes | Checkout Success</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar_container">
+      <div class="logo_container">
+        <img src="Images/SquareEyes_Logo.png" alt="SquareEyes Logo" class="logo" width="200" height="60">
+      </div>
+      <ul class="menu_list">
+        <li class="menu_list_item"><a href="index.html" class="navbar__links">Home</a></li>
+        <li class="menu_list_item"><a href="ListOfVideos.html" class="navbar__links">Movies</a></li>
+        <li class="menu_list_item"><a href="MyCollection.html" class="navbar__links">My Collection</a></li>
+      </ul>
+      <div class="icon_container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+    </div>
+  </nav>
+
+  <div class="content">
+    <div class="payment_form">
+      <h2>Payment</h2>
+      <h3>Payment details</h3>
+      <form>
+        <label for="name_on_card">Name on card</label>
+        <input type="text" id="name_on_card" name="name_on_card" placeholder="Name name" required>
+        <label for="card_number">Card number</label>
+        <input type="text" id="card_number" name="card_number" placeholder="123-456-" required>
+        <label for="expiration_date">Expiration date</label>
+        <input type="text" id="expiration_date" name="expiration_date" placeholder="MM / YY" required>
+        <label for="cvc">CVC</label>
+        <input type="text" id="cvc" name="cvc" placeholder="123" required>
+        <div class="buttons">
+          <button type="submit" class="btn">Cancel order</button>
+          <button type="submit" class="btn">Complete order</button>
+        </div>
+      </form>
+    </div>
+    <div class="order_summary">
+      <h3>Order summary</h3>
+      <div class="order_item">
+        <img src="Images/Square_Eyes_Cover7.jpeg" alt="The Batman" width="100">
+        <p>The Batman</p>
+        <p>169 NOK</p>
+      </div>
+      <p>Total: 169 NOK</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <ul class="footer_menu">
+      <li><a href="About.html">About</a></li>
+      <li><a href="ContactUs.html">Contact us</a></li>
+      <li><a href="Terms.html">Terms and privacy notice</a></li>
+    </ul>
+    <p>©2024 squareeyes.com, Inc. or its affiliates</p>
+  </footer>
+</body>
+</html>
