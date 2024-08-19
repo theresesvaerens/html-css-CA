@@ -3,89 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Square Eyes | List of videos</title>
+  <title>Square Eyes | Movies</title>
   <link rel="stylesheet" href="src/css/styles.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="navbar_container">
-      <div class="logo_container">
-        <img src="Images/SquareEyes_Logo.png" alt="SquareEyes Logo" class="logo" width="200" height="60">
+  <header>
+    <nav class="navbar">
+      <div class="navbar_container">
+        <div class="logo_container">
+          <h1 class="logo">
+            <img src="Images/SquareEyes_Logo.png" alt="SquareEyes Logo" class="logo" width="200" height="60">
+          </h1>
+        </div>
+        <div class="menu_container">
+          <ul class="menu_list">
+            <li class="menu_list_item"><a href="index.html" class="navbar__links">Home</a></li>
+            <li class="menu_list_item"><a href="ListOfVideos.html" class="navbar__links">Movies</a></li>
+            <li class="menu_list_item"><a href="MyCollection.html" class="navbar__links">My Collection</a></li>
+          </ul>
+        </div>
+        <div class="icon_container">
+          <i class="navbar_menu_icon fa-solid fa-magnifying-glass"></i>
+          <i class="navbar_menu_icon fa-solid fa-cart-shopping"></i>
+        </div>
       </div>
-      <div class="menu_container">
-        <ul class="menu_list">
-          <li class="menu_list_item"><a href="index.html" class="navbar__links">Home</a></li>
-          <li class="menu_list_item"><a href="ListOfVideos.html" class="navbar__links">Movies</a></li>
-          <li class="menu_list_item"><a href="MyCollection.html" class="navbar__links">My Collection</a></li>
-        </ul>
-      </div>
-      <div class="icon_container">
-        <i class="navbar_menu_icon fa-solid fa-magnifying-glass"></i>
-        <i class="navbar_menu_icon fa-solid fa-cart-shopping"></i>
-      </div>
-    </div>
-  </nav>
+    </nav>
+  </header> 
 
-  <div class="main_container">
-    <aside class="sidebar">
-      <h2>Categories</h2>
-      <ul>
-        <li><a href="#">All movies</a></li>
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Documentary</a></li>
-        <li><a href="#">Drama</a></li>
-        <li><a href="#">Fantasy</a></li>
-        <li><a href="#">Horror</a></li>
-        <li><a href="#">Musical</a></li>
-        <li><a href="#">Romance</a></li>
-        <li><a href="#">Science fiction</a></li>
-        <li><a href="#">Thriller</a></li>
-      </ul>
-    </aside>
-  
-    <section class="content">
-      <h2>All Movies</h2>
-      <div class="sort_by">
-        <label for="sort">Sort by:</label>
-        <select id="sort">
-          <option value="latest">Latest</option>
-          <option value="oldest">Oldest</option>
-        </select>
-      </div>
-      <div class="movies_grid">
-        <div class="movie_item">
-          <img src="Images/Square_Eyes_Cover7.jpeg" alt="The Batman">
-          <p>The Batman</p>
-          <p>169 NOK</p>
+  <main>
+    <div class="content_videos">
+      <section class="movies_section">
+        <div class="movies_header">
+          <div class="dropdown_wrapper">
+            <input type="checkbox" id="menu_toggle" class="menu_toggle">
+            <label for="menu_toggle" class="menu_button"><i class="fa-solid fa-bars"></i> Categories</label>
+            <aside class="dropdown_menu">
+              <ul class="categories">
+                <li><a href="#">All movies</a></li>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Documentary</a></li>
+                <li><a href="#">Drama</a></li>
+                <li><a href="#">Fantasy</a></li>
+                <li><a href="#">Horror</a></li>
+                <li><a href="#">Musical</a></li>
+                <li><a href="#">Romance</a></li>
+                <li><a href="#">Science fiction</a></li>
+                <li><a href="#">Thriller</a></li>
+              </ul>
+            </aside>
+          </div>
+            <h1 class="movies_header_title">ALL MOVIES</h1>
+            <select class="sort_by">
+              <option value="latest">Sort by: Latest</option>
+              <option value="popular">Sort by: Most Popular</option>
+              <option value="rating">Sort by: Rating</option>
+            </select>
+          </div>
+        
+        <div class="movies_list">
+          <a href="Product7.html"><img src="Images/Square_Eyes_Cover7.jpeg" alt="Batman"></a>
+          <a href="Product1.html"><img src="Images/Square_Eyes_Cover1.jpeg" alt="Hobbs and Shaw"></a>
+          <a href="Product2.html"><img src="Images/Square_Eyes_Cover2.jpeg" alt="Godzilla"></a>
+          <a href="Product3.html"><img src="Images/Square_Eyes_Cover3.jpeg" alt="Once Upon a Time in Hollywood"></a>
+          <a href="Product4.html"><img src="Images/Square_Eyes_Cover4.jpeg" alt="Scream"></a>
+          <a href="Product6.html"><img src="Images/Square_Eyes_Cover6.jpeg" alt="The Addams Family"></a>
+          <a href="Product8.html"><img src="Images/Square_Eyes_Cover8.jpeg" alt="Toy story 4"></a>
+          <a href="Product5.html"><img src="Images/Square_Eyes_Cover5.jpeg" alt="Sweetheart"></a>
         </div>
-        <div class="movie_item">
-          <img src="Images/Square_Eyes_Cover1.jpeg" alt="Godzilla: King of the Monsters">
-          <p>Godzilla: King of the Monsters</p>
-          <p>169 NOK</p>
-        </div>
-        <div class="movie_item">
-          <img src="Images/Square_Eyes_Cover2.jpeg" alt="Hobbs & Shaw">
-          <p>Hobbs & Shaw</p>
-          <p>169 NOK</p>
-        </div>
-        <div class="movie_item">
-          <img src="Images/Square_Eyes_Cover3.jpeg" alt="Sweetheart">
-          <p>Sweetheart</p>
-          <p>169 NOK</p>
-        </div>
-        <div class="movie_item">
-          <img src="Images/Square_Eyes_Cover4.jpeg" alt="Once Upon a Time in Hollywood">
-          <p>Once Upon a Time in Hollywood</p>
-          <p>169 NOK</p>
-        </div>
-        <div class="movie_item">
-          <img src="Images/Square_Eyes_Cover5.jpeg" alt="The Addams Family">
-          <p>The Addams Family</p>
-          <p>169 NOK</p>
-        </div>
-      </div>
-    </section>
-  </div>
+      </section>
+    </div>
+  </main>
 
   <footer class="footer">
     <ul class="footer_menu">

@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Square Eyes | Log in</title>
+  <title>Square Eyes | Payment</title>
   <link rel="stylesheet" href="src/css/styles.css">
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
   <header>
     <nav class="navbar">
@@ -32,11 +32,22 @@
   </header> 
 
   <div class="content">
-    <div class="account_form">
-      <h2>Account</h2>
-      <h3>You are now logged in!</h3>
-          <button type="button" class="btn">Cancel order</button>
-          <a href="Checkout3.html"><button type="button" class="btn">Payment</button></a>
+    <div class="payment_form">
+      <h2>Payment</h2>
+      <h3>Payment details</h3>
+      <form>
+        <form action="Checkout4.html" method="get"> 
+        <label for="name_on_card">Name on card</label>
+        <input type="text" id="name_on_card" name="name_on_card" placeholder="Full name" required>
+        <label for="card_number">Card number</label>
+        <input type="text" id="card_number" name="card_number" placeholder="1234 5678 1234 5678" required>
+        <label for="expiration_date">Expiration date</label>
+        <input type="text" id="expiration_date" name="expiration_date" placeholder="MM / YY" required>
+        <label for="cvc">CVC</label>
+        <input type="text" id="cvc" name="cvc" placeholder="123" required>
+        <div class="buttons">
+          <button type="submit" class="btn">Cancel order</button>
+          <button type="submit" class="btn">Complete order</button>
         </div>
       </form>
     </div>
@@ -54,9 +65,8 @@
   <footer class="footer">
     <ul class="footer_menu">
       <li><a href="About.html">About</a></li>
-      <li><a href="Contact.html">Contact us</a></li>
+      <li><a href="ContactUs.html">Contact us</a></li>
       <li><a href="Terms.html">Terms and privacy notice</a></li>
-      <li><a href="index.html"><img src="Images/SquareEyes_Logo.png" alt="SquareEyes Logo" class="logo" width="200" height="60"></a></li>
     </ul>
     <p>©2024 squareeyes.com, Inc. or its affiliates</p>
   </footer>
