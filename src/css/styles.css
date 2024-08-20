@@ -11,6 +11,8 @@ body {
   background-color: #000000;
   color: white;
   overflow-x: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .navbar {
@@ -33,23 +35,25 @@ body {
 }
 
 .logo_container img {
-  width: 150px;
+  width: 200px;
 }
 
 .menu_list {
   display: flex;
   align-items: center;
-  margin-left: auto;
+  margin-left: 600px
 }
 
 .menu_list_item {
   margin: 0 15px;
+  margin-left: 100;
 }
 
 .navbar__links {
   color: white;
   font-size: 18px;
   font-weight: bold;
+
 }
 
 .icon_container {
@@ -74,15 +78,12 @@ body {
 
 .footer_menu {
   display: flex;
-  margin-bottom: 10px;
   margin-left: 20px;
 }
 
 .footer_menu li {
   margin: 15px 15px;
 }
-
-
 
 .footer_menu a {
   color: white;
@@ -450,11 +451,7 @@ font-size: smaller;
 .contact_left {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
-}
-
-.contact_left_title h1 {
-  margin-bottom: 10px;
+  Width: 400px;
 }
 
 .contact_inputs {
@@ -480,9 +477,21 @@ button:hover {
 }
 
 .contact_right{
-  font-size: small;
-  padding-left: 20px;
-  }
+  align-items: center;
+}
+
+.contact_right p{
+  font-size: medium;
+  padding: 5px;
+  padding-left: 80px;
+}
+
+.contact_right i{
+  font-size: medium;
+  padding-top: 20px;
+  padding-left: 80px;
+  
+}
 
 .contact_right img {
   max-width: 100%;
