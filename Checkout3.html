@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Square Eyes | Payment</title>
   <link rel="stylesheet" href="src/css/styles.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -30,12 +31,10 @@
       </div>
     </nav>
   </header> 
-
   <div class="content">
     <div class="payment_form">
       <h2>Payment</h2>
       <h3>Payment details</h3>
-      <form>
         <form action="Checkout4.html" method="get"> 
         <label for="name_on_card">Name on card</label>
         <input type="text" id="name_on_card" name="name_on_card" placeholder="Full name" required>
@@ -46,7 +45,7 @@
         <label for="cvc">CVC</label>
         <input type="text" id="cvc" name="cvc" placeholder="123" required>
         <div class="buttons">
-          <button type="submit" class="btn">Cancel order</button>
+          <a href="index.html"><button type="submit" class="btn">Cancel order</button></a>
           <button type="submit" class="btn">Complete order</button>
         </div>
       </form>

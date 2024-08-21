@@ -22,8 +22,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2%;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
 }
@@ -53,7 +52,6 @@ body {
   color: white;
   font-size: 18px;
   font-weight: bold;
-
 }
 
 .icon_container {
@@ -71,14 +69,12 @@ body {
 
 .footer {
   background-color: #000000;
-  padding: 20px 0;
   text-align: center;
   margin-top: 20px;
 }
 
 .footer_menu {
   display: flex;
-  margin-left: 20px;
 }
 
 .footer_menu li {
@@ -97,33 +93,34 @@ body {
 
 /*Home page*/
 .movie_highlight {
-  display: flex;
+  display: block;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 70px;
 }
 
 .cover_image {
-  width: 350px;
-  height: 600px;
+  width: 280px;
+  height: 400px;
 }
 
 .close_image {
-  width: 1000px;
-  height: 600px;
+  width: 1135px;
+  height: 400px;
 }
 
 .movie_info {
   position: absolute;
-  top: 70px;
-  left: 460px;
+  top: 80px;
+  left: 300px;
   color: white;
   font-size: 24px;
 }
 
 .top_movies h2 {
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+  margin-left: 50px;
 }
 
 .scroll-container {
@@ -133,6 +130,8 @@ body {
   padding: 20px;
   margin: 20px auto;
   background-color: #000;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .scroll-content {
@@ -153,6 +152,8 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .menu_toggle {
@@ -206,6 +207,7 @@ body {
 
 .menu_toggle:checked + .menu_button + .dropdown_menu {
   display: block;
+  border-radius: 5px;
 }
 
 .movies_section {
@@ -229,6 +231,7 @@ body {
   font-size: 12px;
   width: 150px;
   height: 30px;
+  border-radius: 5px;
 }
 
 .movies_list {
@@ -250,6 +253,7 @@ body {
 .movie_details{
   display: flex;
   max-width: 1200px;
+  margin-top: 40px;
 }
 
 .cover{
@@ -295,17 +299,23 @@ body {
 .content {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
+  padding-left: 65px;
+  margin-top: 50px;
+  margin-bottom: 250px;
 }
 
 .account_form, .order_summary {
   width: 45%;
   margin-top: 40px;
-  margin-left: 50px;
 }
 
-.account_form h2, .order_summary h3 {
+.account_form h2 {
   margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.order_summary h3 {
+  margin-top: 50px;
 }
 
 .account_form form {
@@ -346,27 +356,38 @@ body {
 }
 
 /*checkout 2*/
+.account {
+  flex: 1;
+  margin-right: 20px;
+}
+
+h3 {
+  margin-bottom: 20px;
+}
+
+
+.order_summary_logged_in { 
+  flex: 1;
+  margin-left: 20px;
+  max-width: 300px;
+  }
 
 
 /*checkout 3*/
-.content {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
+
+.payment_form h2 {
+  margin-top: 70px;
 }
 
-.payment_form, .order_summary {
-  width: 45%;
-}
-
-.payment_form h2, .order_summary h3 {
-  margin-bottom: 20px;
+.payment_form h3 {
+  margin-top: 20px;
 }
 
 .payment_form form {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 400px;
 }
 
 .payment_form label {
@@ -380,35 +401,17 @@ body {
   border-radius: 5px;
 }
 
-.buttons {
-  display: flex;
-  gap: 10px;
-}
-
-.buttons .btn {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #fff;
-  color: #000;
-  cursor: pointer;
-}
-
-.order_summary .order_item {
-  display: flex;
-  gap: 15px;
-  align-items: center;
-}
-
-/*Checkout Success*/
+/*Checkout 4*/
 .checkout_success {
   text-align: center;
+  margin-bottom: 250px;
 }
 
 .checkout_success i {
   font-size: 5rem; 
   color: #4caf50; 
   margin-bottom: 20px;
+  margin-top: 170px;
 }
 
 .checkout_success h1 {
@@ -426,6 +429,7 @@ body {
 padding: 0;
 margin-top: 100px;
 font-size: smaller;
+margin-bottom: 250px;
 }
 
 .about h1 {
@@ -435,7 +439,7 @@ font-size: smaller;
 
 .about p {
   text-align: left;
-  margin-right: 200px;
+  margin-right: 800px;
   margin-left: 50px;
   margin-bottom: 10px;
 }
@@ -490,7 +494,6 @@ button:hover {
   font-size: medium;
   padding-top: 20px;
   padding-left: 80px;
-  
 }
 
 .contact_right img {
