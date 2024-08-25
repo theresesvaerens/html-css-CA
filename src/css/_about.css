@@ -1,0 +1,19 @@
+/*about us*/
+.about {
+    padding: 0;
+    margin-top: 100px;
+    font-size: smaller;
+    margin-bottom: 250px;
+    }
+    
+    .about h1 {
+      margin-bottom: 20px;
+      margin-left: 50px;
+    }
+    
+    .about p {
+      text-align: left;
+      margin-right: 800px;
+      margin-left: 50px;
+      margin-bottom: 10px;
+    }

@@ -1,0 +1,56 @@
+
+/*Home page*/
+.movie_highlight {
+    display: block;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 70px;
+  }
+  
+  .cover_image {
+    max-width: 100%;
+    width: 1450px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 50px;
+    margin-top: 20px;
+  }
+  
+  .movie_info {
+    position: absolute;
+    top: 95px;
+    left: 70px;
+    color: white;
+    font-size: 24px;
+    padding-right: 50px;
+  }
+  
+  .top_movies h2 {
+    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+  
+  .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #000;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  .scroll-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .scroll-content img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+  
